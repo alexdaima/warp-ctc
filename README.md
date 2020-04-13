@@ -1,6 +1,6 @@
 # Warp CTC
 
-PyTorch bindings for WarpCTC (supporting 0.4.1 __&&__ PyTorch 1.3.1)
+(_linux only_) PyTorch bindings for WarpCTC (supporting `0.4.1`, `1.3.1`, `1.4.0`)
 
 Baidu's [WarpCTC](https://github.com/baidu-research/warp-ctc), is a fast parallel implementation of
 Connectionist Temporal Classification (CTC), on both CPU and GPU, written in C++ and CUDA.
@@ -15,6 +15,16 @@ are written in C. Also, PyTorch 0.4.1 has non-staticmethod `forward` functions d
 1. Pytorch >=1.0.0 uses `torch.utils.cpp_extension.{BuildExtension,CppExtension}` to build extensions,
 where the bindings are written in C++. Also, Pytorch 1.3.1 has staticmethod `forward` functions defined on
 autograd functions.
+
+## Docker Images
+
+I have taken offical pytorch images and pre-installed the warp-ctc functionality:
+
+```txt
+pytorch/pytorch             =>  asciialex/pytorch
+---------------                 -----------------
+:1.4-cuda10.1-cudnn7-devel  =>  :1.4-cuda10.1-cudnn7-devel-warp-ctc
+```
 
 ## Building & Installing
 
