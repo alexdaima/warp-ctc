@@ -47,10 +47,10 @@ cd warp-ctc/bindings/v0_4_1
 python3 build.py
 ```
 
-### PyTorch 1.3.1
+### PyTorch 1.3.1 / 1.4.0
 
 ```bash
-cd warp-ctc/bindings/v1_3_1
+cd warp-ctc/bindings/v1_4_0  # or /v1_3_1
 python3 setup.py install --user
 ```
 
