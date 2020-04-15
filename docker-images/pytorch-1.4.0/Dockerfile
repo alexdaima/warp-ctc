@@ -6,7 +6,7 @@ ENV PATH="${PATH}:/opt/conda/pkgs/pytorch-1.4.0-py3.7_cuda10.1.243_cudnn7.6.3_0/
 
 RUN apt-get update -y && \
     apt-get install git cmake -y && \
-    git clone git@github.com:asciialex/warp-ctc.git /opt && \
+    git clone https://github.com/asciialex/warp-ctc.git /opt/warp-ctc && \
     cd /opt/warp-ctc/warp-ctc && \
     mkdir build && \
     cd build && \
